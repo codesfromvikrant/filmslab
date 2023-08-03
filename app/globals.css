@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --gray-100: #f3f4f6;
+  --gray-900: #111827;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --cyan-50: #ecfeff;
+  --blue-500: #3b82f6;
+  --blue-200: #bfdbfe;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +20,27 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--gray-900);
+  background: linear-gradient(60deg, var(--gray-100), var(--cyan-50), var(--slate-100));
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: var(--slate-200);
+  border-radius: 8px; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--slate-200);
+  border-radius: 8px;
+  width: 5px;
 }
