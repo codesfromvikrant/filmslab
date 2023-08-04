@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import { useRouter } from "next/navigation";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,6 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const HeroSection = () => {
+  const router = useRouter();
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -46,7 +48,12 @@ const HeroSection = () => {
               <p className="text-gray-200 mb-5 mt-2 text-lg leading-tight text-start  w-2/3">
                 {movie.overview}
               </p>
-              <button className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-md">
+              <button
+                onClick={() => {
+                  router.push(`/info?media_type=movie&id=${movie.id}`);
+                }}
+                className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-md"
+              >
                 View More Info
               </button>
             </div>

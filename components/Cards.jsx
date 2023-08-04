@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import apiSettings from "@/api";
 import Rating from "./Rating";
 import NoImage from "@/public/no_image.jpg";
 import { useRouter } from "next/navigation";
+import Loading from "./Loading";
 
 const Cards = ({ data, media_type }) => {
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
+
+  useEffect(() => {
+    if (data.length === 0) {
+      setLoading(true);
+    } else {
+      setLoading(false);
+    }
+  }, [data]);
 
   const cards = data.map((el) => {
     return (
@@ -30,7 +40,12 @@ const Cards = ({ data, media_type }) => {
     );
   });
 
-  return <>{cards}</>;
+  return (
+    <>
+      {cards}
+      {loading && <Loading />}
+    </>
+  );
 };
 
 export default Cards;

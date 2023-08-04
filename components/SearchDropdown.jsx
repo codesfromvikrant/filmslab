@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import apiSettings from "@/api";
 import axios from "axios";
-import Rating from "./Rating";
 
 const SearchDropdown = ({ value }) => {
   const [searchData, setSearchData] = useState([]);
@@ -32,7 +31,7 @@ const SearchDropdown = ({ value }) => {
       return (
         <div
           key={el.id}
-          className="flex justify-between items-center py-2 border-t-[0.2px] border-b-[0.2px] border-gray-200"
+          className="flex justify-between items-center py-2 border-t-[0.2px] border-b-[0.2px] border-gray-200 cursor-pointer hover:bg-gray-200"
         >
           <div className="flex justify-start items-center gap-2">
             <div

@@ -13,8 +13,8 @@ const apiSettings = {
   // For Movie Endpoints
   POPULAR_MOVIES: `${BASE_URL}movie/popular${query}`,
   POPULAR_TV: `${BASE_URL}tv/popular${query}`,
-  TRENDING_MOVIES: `${BASE_URL}trending/movie/week${query}`,
-  TRENDING_TV: `${BASE_URL}trending/tv/week${query}`,
+  TRENDING_MOVIES: `${BASE_URL}trending/movie/`,
+  TRENDING_TV: `${BASE_URL}trending/tv/`,
   TOP_RATED_MOVIES: `${BASE_URL}movie/top_rated${query}`,
   TOP_RATED_TV: `${BASE_URL}tv/top_rated${query}`,
   MOVIE_LIST: `${BASE_URL}genre/movie/list${query}`,

@@ -2,8 +2,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import apiSettings from "@/api";
+import { useRouter } from "next/navigation";
 
 const Genres = () => {
+  const router = useRouter();
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -19,6 +21,9 @@ const Genres = () => {
     return (
       <div
         key={el.id}
+        onClick={() => {
+          router.push(`/movies?genres=${el.id}`);
+        }}
         className="flex justify-between items-center text-gray-900 bg-gradient-to-r from-white to-pink-100 shadow-md cursor-pointer py-2 px-4 rounded-md"
       >
         <p className="font-medium text-gray-800">{el.name}</p>
