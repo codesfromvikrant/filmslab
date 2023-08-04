@@ -36,16 +36,16 @@ const Info = ({ data, media_type }) => {
       style={style}
       className="py-16 px-6 w-full flex justify-center items-center"
     >
-      <div className="flex justify-start items-start sm:flex-row flex-col bg-[#000000ae] xl:max-w-6xl max-w-full  rounded-md relative z-1">
-        <div className="sm:w-1/3 w-1/2">
+      <div className="flex justify-start items-start sm:flex-row flex-col sm:gap-0 gap-5 sm:bg-[#000000ae] bg-transparent xl:max-w-6xl max-w-full  rounded-md relative z-1">
+        <div className="sm:w-1/3 w-full">
           <img
             src={posterImage ? posterImage : NoImage.src}
-            className="w-full rounded-md"
+            className="w-full rounded-md sm:shadow-none shadow-2xl"
             alt=""
           />
         </div>
 
-        <div className="h text-white sm:w-2/3 xl:p-12 p-6">
+        <div className="h-full sm:bg-transparent  bg-[#000000ae] rounded-md text-white sm:w-2/3 xl:p-12 p-6">
           <div
             style={ratingStyle}
             className="w-max px-4 py-1 rounded flex justify-start items-center gap-1"

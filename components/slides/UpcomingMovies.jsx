@@ -18,7 +18,9 @@ const UpcomingMovies = () => {
   return (
     <section className="my-14">
       <div className="flex justify-start items-center gap-2">
-        <h3 className="text-2xl font-bold">Upcoming Movies</h3>
+        <h3 className="sm:text-2xl text-3xl text-gray-800 font-extrabold">
+          Upcoming Movies
+        </h3>
       </div>
 
       <SlideLayout>

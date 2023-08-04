@@ -7,7 +7,7 @@ import AiringToday from "./slides/AiringToday";
 
 const SlidesSections = () => {
   return (
-    <main className="container max-w-6xl mx-auto py-14">
+    <main className="container max-w-6xl mx-auto py-14 px-4">
       <TrendingMovies />
       <TrendingTvshows />
       <Genres />

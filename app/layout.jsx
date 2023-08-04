@@ -3,10 +3,10 @@ import { Source_Sans_3 } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const source_sans_3 = Source_Sans_3({
-  weight: ["300", "400", "500", "700", "900"],
-  subsets: ["latin"],
-});
+// const source_sans_3 = Source_Sans_3({
+//   weight: ["300", "400", "500", "700", "900"],
+//   subsets: ["latin"],
+// });
 
 export const metadata = {
   title: "FilmsLab",
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={source_sans_3.className}>
+      <body>
         <Header />
         {children}
         <Footer />

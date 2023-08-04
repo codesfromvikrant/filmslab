@@ -33,8 +33,10 @@ const Genres = () => {
 
   return (
     <div>
-      <div className="text-2xl font-bold">All Genres</div>
-      <div className="flex justify-start items-center flex-wrap gap-5 mt-3">
+      <div className="sm:text-2xl text-3xl text-gray-800 font-extrabold">
+        All Genres
+      </div>
+      <div className="flex justify-start items-center flex-wrap sm:gap-5 gap-3 mt-3">
         {genresList}
       </div>
     </div>

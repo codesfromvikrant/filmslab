@@ -22,9 +22,9 @@ const Similar = () => {
   }, []);
 
   return (
-    <section className="my-14">
+    <section className="my-14 md:px-0 px-4">
       <div className="flex justify-start items-center gap-2">
-        <h3 className="text-2xl font-extrabold mb-2 capitalize">{`Similar ${mediaType}s you must watch`}</h3>
+        <h3 className="sm:text-2xl text-3xl font-extrabold mb-2 capitalize">{`Similar ${mediaType}s you must watch`}</h3>
       </div>
 
       <SlideLayout>

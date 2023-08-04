@@ -40,7 +40,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-white shadow py-3">
+    <header className="bg-white shadow py-3 px-4">
       <div className="max-w-6xl mx-auto container flex justify-between items-center">
         <div className="logo">
           <Link href="/">

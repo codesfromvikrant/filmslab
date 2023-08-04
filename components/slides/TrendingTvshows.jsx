@@ -28,13 +28,15 @@ const TrendingTvshows = () => {
 
   return (
     <section className="my-14">
-      <div className="flex justify-start items-center gap-2">
-        <h3 className="text-2xl font-bold">Trending In TV Shows</h3>
-        <BiTrendingUp className="text-3xl text-red-500 font-semibold" />
+      <div className="flex justify-start sm:items-center items-start sm:gap-5 gap-2 sm:flex-row flex-col">
+        <h3 className="sm:text-2xl text-3xl text-gray-800 font-extrabold">
+          Trending In TV Shows
+        </h3>
+
         <select
           onChange={changeDuration}
           ref={selectRef}
-          className="text-gray-200 bg-gray-800 py-2 px-4 cursor-pointer rounded"
+          className="text-gray-200 bg-gray-800 sm:py-2 py-1 sm:tex-base text-sm px-4 cursor-pointer rounded"
         >
           <option value="week">Weekly</option>
           <option value="day">Daily</option>

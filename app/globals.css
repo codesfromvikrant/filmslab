@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,6 +29,7 @@ html {
 body {
   color: var(--gray-900);
   background: linear-gradient(60deg, var(--gray-100), var(--cyan-50), var(--slate-100));
+  font-family: 'Lato', sans-serif;
 }
 
 ::-webkit-scrollbar {

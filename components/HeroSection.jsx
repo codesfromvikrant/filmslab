@@ -40,12 +40,12 @@ const HeroSection = () => {
       };
       return (
         <SwiperSlide key={movie.id}>
-          <div style={style} className="pb-16">
+          <div style={style} className="lg:pb-16 pb-20 px-4">
             <div className="max-w-6xl mx-auto h-full flex flex-col justify-end items-start">
-              <h1 className="text-5xl text-start font-semibold w-2/3 text-white">
+              <h1 className="lg:text-4xl  text-3xl text-start font-extrabold md:w-2/3 text-white">
                 {movie.title}
               </h1>
-              <p className="text-gray-200 mb-5 mt-2 text-lg leading-tight text-start  w-2/3">
+              <p className="text-gray-200 mb-5 mt-2 lg:text-base text-base leading-tight text-start md:w-2/3">
                 {movie.overview}
               </p>
               <button
